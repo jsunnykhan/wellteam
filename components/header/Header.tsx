@@ -19,13 +19,18 @@ function Header() {
       </div>
 
       <nav className="hidden lg:flex gap-10 items-center">
-        <p className="text-white font-medium text-lg cursor-pointer">
-          Challenges
-        </p>
+        <Link href="#challenge" as='/challenge' passHref>
+         
+          <a className="text-white font-medium text-lg cursor-pointer">
+            Challenges
+          </a>
+        </Link>
 
-        <p className="text-white font-medium text-lg cursor-pointer">
-          Membership
-        </p>
+        <Link href="#footer" as='/footer'>
+          <a className="text-white font-medium text-lg cursor-pointer">
+            Membership
+          </a>
+        </Link>
 
         <p className="text-white font-medium text-lg cursor-pointer">
           Programs
@@ -40,7 +45,10 @@ function Header() {
         onClick={() => console.log("Hello")}
         className="flex rounded-full bg-white px-7 py-2 cursor-pointer ml-10"
       >
-        <button type="button" className="font-serif font-bold text-black text-lg">
+        <button
+          type="button"
+          className="font-serif font-bold text-black text-lg"
+        >
           Login
         </button>
         <div className="ml-2 mt-1">

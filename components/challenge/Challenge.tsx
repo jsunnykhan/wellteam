@@ -11,7 +11,7 @@ import {
 
 function Challenge() {
   return (
-    <div className="h-screen flex mx-auto justify-between items-center">
+    <div id="challenge" className="h-screen flex mx-auto justify-between items-center">
       <section className="space-y-20">
         <div>
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-white">

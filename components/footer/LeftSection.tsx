@@ -6,8 +6,11 @@ import {
   faFacebookF,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { useRef } from "react";
 
 function LeftSection() {
+
+  const emailRef = useRef();
   return (
     <div className="space-y-16">
       <div>
@@ -44,6 +47,7 @@ function LeftSection() {
         </h1>
 
         <input
+       
           type="email"
           className="bg-transparent outline-none py-4 border-b-2 border-b-primaryLight placeholder-slate-600 font-serif mt-3 w-auto"
           placeholder="Sign up for updates"
