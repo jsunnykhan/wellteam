@@ -1,15 +1,17 @@
 import type { NextPage } from "next";
 import Challenge from "../components/challenge/Challenge";
 import Header from "../components/header/Header";
+import Footer from './../components/footer/Footer';
 
 const Home: NextPage = () => {
   return (
-    <body className="bg-primary h-screen px-10 lg:px-0">
-      <main className="sm:max-w-5xl mx-auto">
+    <div className="bg-primary text-white">
+      <div className="py-4 sm:max-w-6xl mx-auto ">
         <Header />
         <Challenge />
-      </main>
-    </body>
+        <Footer/>
+      </div>
+    </div>
   );
 };
 

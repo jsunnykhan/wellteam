@@ -3,48 +3,56 @@ import Link from "next/link";
 import React from "react";
 
 function Header() {
+  const loginClickHandler = (event: any) => {
+    console.log("first");
+  };
   return (
-    <header className="flex mt-5 py-3 sm:mt-10 sticky top-0 z-50">
+    <header className="flex bg-primary py-3 sticky top-0 z-50 items-center justify-center">
       <div className="cursor-pointer flex-1 w-60">
-        <Link href="/" passHref>
-          <Image
-            alt="wellteam"
-            src="https://static.wixstatic.com/media/6c8d7e_4384b65b31894af2b8a6d6a590728942~mv2.png/v1/fill/w_169,h_40,al_c,q_85,usm_0.66_1.00_0.01/White%20text%20on%20Transparent.webp"
-            width={120}
-            height={40}
-          />
-        </Link>
+        <Image
+          alt="wellteam"
+          src="/logo.png"
+          width={150}
+          height={50}
+          layout="fixed"
+        />
       </div>
 
-      <nav className="hidden sm:flex gap-10 items-center">
-        <Link href="/challenge" passHref>
-          <p className="text-white font-medium text-lg cursor-pointer">
-            Challenges
-          </p>
-        </Link>
-        <Link href="/members" passHref>
-          <p className="text-white font-medium text-lg cursor-pointer">
-            Membership
-          </p>
-        </Link>
-        <Link href="/programs" passHref>
-          <p className="text-white font-medium text-lg cursor-pointer">
-            Programs
-          </p>
-        </Link>
-        <Link href="/article" passHref>
-          <p className="text-white font-medium text-lg  cursor-pointer">
-            Articles
-          </p>
-        </Link>
+      <nav className="hidden lg:flex gap-10 items-center">
+        <p className="text-white font-medium text-lg cursor-pointer">
+          Challenges
+        </p>
 
-        <button
-          type="button"
-          className="rounded-full bg-white px-7 py-2 cursor-pointer font-serif font-bold text-lg"
-        >
+        <p className="text-white font-medium text-lg cursor-pointer">
+          Membership
+        </p>
+
+        <p className="text-white font-medium text-lg cursor-pointer">
+          Programs
+        </p>
+
+        <p className="text-white font-medium text-lg  cursor-pointer">
+          Articles
+        </p>
+      </nav>
+
+      <div
+        onClick={() => console.log("Hello")}
+        className="flex rounded-full bg-white px-7 py-2 cursor-pointer ml-10"
+      >
+        <button type="button" className="font-serif font-bold text-black text-lg">
           Login
         </button>
-      </nav>
+        <div className="ml-2 mt-1">
+          <Image
+            src="/arrow.svg"
+            alt="arrow"
+            width={30}
+            height={20}
+            layout="fixed"
+          />
+        </div>
+      </div>
     </header>
   );
 }
