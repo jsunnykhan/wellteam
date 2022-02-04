@@ -2,7 +2,7 @@ import LeftSection from "./LeftSection";
 
 function Footer() {
   return (
-    <div className="flex mb-20" id="footer">
+    <div className="flex" id="footer">
       <LeftSection />
       <section></section>
     </div>
