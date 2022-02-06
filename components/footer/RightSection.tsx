@@ -93,9 +93,9 @@ function RightSection() {
     <div>
       <div className="space-y-14 ">
         <div className="px-7 py-5 shadow-lg bg-primaryLight rounded space-y-4">
-          <h1 className="text-2xl font-serif">
+          <h5>
             Interested in Running Together?
-          </h1>
+          </h5>
           <div className="flex gap-5">
             <ButtonComponent
               title="Get in touch"
@@ -115,25 +115,25 @@ function RightSection() {
           <div className="space-y-3">
             <h1 className="font-bold font-serif text-xl">Company</h1>
             {footerLink.company.map((data: linkData) => (
-              <h1 className="text-gray-500 cursor-pointer" key={data.title}>
+              <p className="text-gray-500 cursor-pointer" key={data.title}>
                 {data.title}
-              </h1>
+              </p>
             ))}
           </div>
           <div className="space-y-3">
             <h1 className="font-bold font-serif text-xl">Articles</h1>
             {footerLink.article.map((data: linkData) => (
-              <h1 className="text-gray-500 cursor-pointer" key={data.title}>
+              <p className="text-gray-500 cursor-pointer" key={data.title}>
                 {data.title}
-              </h1>
+              </p>
             ))}
           </div>
           <div className="space-y-3">
             <h1 className="font-bold font-serif text-xl">Support</h1>
             {footerLink.support.map((data: linkData) => (
-              <h1 className="text-gray-500 cursor-pointer" key={data.title}>
+              <p className="text-gray-500 cursor-pointer" key={data.title}>
                 {data.title}
-              </h1>
+              </p>
             ))}
           </div>
         </div>

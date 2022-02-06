@@ -8,7 +8,7 @@ function Header() {
     console.log("Login");
   };
   return (
-    <header className="flex bg-primary py-3 sticky top-0 z-50 items-center justify-center">
+    <header className="flex bg-primary  sticky top-0 z-50 items-center justify-center py-4 px-32 mx-auto">
       <div className="flex-1">
         <Link href="#home" passHref>
           <Image

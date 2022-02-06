@@ -6,7 +6,7 @@ import Header from "../header/Header";
 function Layout({ children }: any) {
   return (
     <div className="bg-primary text-white ">
-      <div className="py-4 w-4/5 mx-auto">
+      <div>
         <Header />
         {children}
         <Footer />

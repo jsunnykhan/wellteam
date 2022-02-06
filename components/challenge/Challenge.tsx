@@ -4,7 +4,10 @@ import ChallengeLeftSection from "./ChallengeLeft";
 
 function Challenge() {
   return (
-    <div id="challenge" className="h-screen flex my-auto items-center justify-between space-x-5">
+    <div
+      id="challenge"
+      className="h-screen py-4 w-4/5 flex m-auto items-center justify-between space-x-5"
+    >
       <ChallengeLeftSection />
       <div className="relative h-min">
         <Image

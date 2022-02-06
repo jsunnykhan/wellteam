@@ -19,7 +19,7 @@ function HomePage() {
   return (
     <div
       id="home"
-      className="h-screen flex mx-auto justify-between items-center"
+      className="h-screen flex mx-auto justify-between items-center py-4 w-4/5 "
     >
       <section className="space-y-20">
         <div>

@@ -24,7 +24,7 @@ function ButtonComponent(props: buttonProps) {
         {title}
       </button>
       <div className="ml-2 mt-1">
-        <Image src={url} alt={title} width={30} height={20} layout="fixed" />
+        <Image className="fill-gray-600" src={url} alt={title} width={30} height={20} layout="fixed" />
       </div>
     </div>
   );
