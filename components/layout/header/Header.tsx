@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ButtonComponent from "../common/ButtonComponent";
+import ButtonComponent from "../../common/ButtonComponent";
 
 function Header() {
   const onLoginHandler = (event: any) => {

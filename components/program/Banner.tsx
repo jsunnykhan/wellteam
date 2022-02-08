@@ -69,7 +69,7 @@ function Banner() {
 
       <div className="my-auto">
         <Image
-          src="/skating_buddy.jpg"
+          src="/deal.svg"
           width={300}
           height={200}
           alt="Gift teamwell"

@@ -10,11 +10,11 @@ function ChallengeLeftSection () {
   };
   return (
     <div className="space-y-8">
-      <h1 className="font-serif text-5xl sm:text-6xl">
+      <h2>
         Brand Discovery
         <br />
         that sticks.
-      </h1>
+      </h2>
       <p>
         Exclusive, online, guided challenges, members-only community and
         database of powerful life hacks. We are building a global team of one
@@ -30,9 +30,9 @@ function ChallengeLeftSection () {
         and online and offline sessions.
       </p>
 
-      <h3 className="font-serif text-2xl">
+      <h4>
         Join today, take on a challenge and optimise your life.
-      </h3>
+      </h4>
 
       <div className="flex space-x-5">
         <ButtonComponent

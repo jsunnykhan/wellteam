@@ -1,6 +1,6 @@
 import { title } from "process";
 import React from "react";
-import ButtonComponent from "../common/ButtonComponent";
+import ButtonComponent from "../../common/ButtonComponent";
 
 interface linkData {
   title: string;

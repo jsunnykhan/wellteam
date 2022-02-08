@@ -7,15 +7,13 @@
     @apply font-serif text-5xl sm:text-6xl lg:text-7xl font-bold;
   }
   h2 {
-    @apply font-serif text-4xl sm:text-5xl lg:text-6xl font-bold;
-  }
-  h3 {
     @apply font-serif text-3xl sm:text-4xl lg:text-5xl font-bold;
   }
-  h4 {
+  h3 {
     @apply font-serif text-2xl sm:text-3xl lg:text-4xl font-bold;
   }
-  h5 {
+  h4 {
     @apply font-serif text-2xl;
   }
+ 
 }

@@ -6,10 +6,10 @@ function Challenge() {
   return (
     <div
       id="challenge"
-      className="h-screen py-4 w-4/5 flex m-auto items-center justify-between space-x-5"
+      className="h-screen w-4/5 grid grid-cols-2 mx-auto items-center space-x-5"
     >
       <ChallengeLeftSection />
-      <div className="relative h-min">
+      <div className="relative h-min items-center">
         <Image
           src="/challenge.jpg"
           alt="travel world"

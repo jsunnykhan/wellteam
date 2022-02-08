@@ -19,7 +19,7 @@ function HomePage() {
   return (
     <div
       id="home"
-      className="h-screen flex mx-auto justify-between items-center py-4 w-4/5 "
+      className="h-screen grid grid-cols-2 mx-auto items-center py-4 w-4/5 "
     >
       <section className="space-y-20">
         <div>
@@ -74,13 +74,12 @@ function HomePage() {
           </div>
         </div>
       </section>
-      <section className=" w-1/2">
+      <section className="mx-auto">
         <Image
-          src="/skating_buddy.jpg"
+          src="/basketball.svg"
           alt="Skating"
-          layout="fixed"
-          width={400}
-          height={400}
+          width={1080}
+          height={720}
           priority={true}
         />
       </section>

@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
 import React, { ReactNode } from "react";
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
 
 function Layout({ children }: any) {
   return (
