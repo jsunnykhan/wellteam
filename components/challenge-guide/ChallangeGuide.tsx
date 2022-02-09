@@ -38,9 +38,9 @@ function ChallengeGuide() {
         <Image src="/bg2.jpg" layout="fill" alt="Leafs" objectFit="cover" />
         <div className="absolute bg-black w-full h-full opacity-60"></div>
 
-        <div className="absolute -bottom-48">
-          <div className="flex justify-end">
-            <div className="pl-32 space-y-16">
+        <div className="absolute -bottom-[55%] right-0 w-full">
+          <div className="flex justify-between">
+            <div className="space-y-16 pl-[10%]">
               <h3 className="max-w-xl">
                 {`Take on a challenge & optimise your life.`}
               </h3>
@@ -50,7 +50,7 @@ function ChallengeGuide() {
                 ))}
               </div>
             </div>
-            <div className="bg-primaryLight px-6 py-14">
+            <div className="bg-primaryLight right-0 mt-16 px-6 py-14">
               <div className="space-y-4">
                 {guideList.right.map((data) => (
                   <ListItem key={data.id} title={data.title} />

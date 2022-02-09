@@ -1,5 +1,5 @@
 import React from "react";
-import TwitterCard from "../profile/TwitterCard";
+import TwitterCard from "../cards/TwitterCard";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";

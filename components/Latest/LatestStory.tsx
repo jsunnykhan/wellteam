@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Post from "../post/Post";
-import ProfileCard from "../profile/ProfileCard";
+import ProfileCard from "../cards/ProfileCard";
 import Headline from "./../common/Headline";
 
 const LatestStoryData = [

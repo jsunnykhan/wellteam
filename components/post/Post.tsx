@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { type } from "os";
 import React from "react";
-import ProfileCard from "../profile/ProfileCard";
+import ProfileCard from "../cards/ProfileCard";
 interface ProfileCardData {
   name: string;
   date: string;

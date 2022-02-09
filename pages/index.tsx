@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import ChallengeGuide from "../components/challenge-guide/ChallangeGuide";
 import Challenge from "../components/challenge/Challenge";
 import Feedback from "../components/feedback/Feedback";
+import Fitness from "../components/feedback/Fitness";
 import HomePage from "../components/home/HomePage";
 import LatestStory from "../components/Latest/LatestStory";
 import LatestVideo from "../components/Latest/LatestVideo";
@@ -11,7 +12,7 @@ import Feature from "./../components/feature/Feature";
 
 const Home: NextPage = () => {
   return (
-    <div className="space-y-24">
+    <div className="space-y-28">
       <HomePage />
       <Challenge />
       <Programs />
@@ -21,6 +22,8 @@ const Home: NextPage = () => {
       <Feature />
       <LatestStory />
       <Feedback />
+      <Fitness />
+
       <div className="h-16"></div>
     </div>
   );
