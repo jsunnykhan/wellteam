@@ -36,7 +36,7 @@ function LatestStory() {
         btn2={{ title: "Join us", bg_color: "bg-secondary" }}
       />
 
-      <div className="grid grid-cols-2 grid-rows-2 gap-2">
+      <div className="grid grid-cols-2 grid-rows-2 gap-x-5 gap-y-10">
         <div className="row-span-2">
           <div className="space-y-5">
             <Image
@@ -44,9 +44,9 @@ function LatestStory() {
               src={LatestStoryData[0].image_url}
               alt="Nice picture"
               width={500}
-              height={650}
+              height={670}
             />
-            <div className="space-y-5">
+            <div className="space-y-2">
               <h4>{LatestStoryData[0].title}</h4>
               <p>{LatestStoryData[0].subTitle}</p>
             </div>
@@ -64,7 +64,7 @@ function LatestStory() {
               width={500}
               height={250}
             />
-            <div className="space-y-5">
+            <div className="space-y-2">
               <h4>{LatestStoryData[1].title}</h4>
               <p>{LatestStoryData[1].subTitle}</p>
             </div>
@@ -82,7 +82,7 @@ function LatestStory() {
               width={500}
               height={250}
             />
-            <div className="space-y-5">
+            <div className="space-y-2">
               <h4>{LatestStoryData[2].title}</h4>
               <p>{LatestStoryData[2].subTitle}</p>
             </div>
