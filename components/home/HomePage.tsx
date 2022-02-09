@@ -19,7 +19,7 @@ function HomePage() {
   return (
     <div
       id="home"
-      className="h-screen grid grid-cols-2 mx-auto items-center py-4 w-4/5 "
+      className="grid grid-cols-2 mx-auto items-center py-4 w-4/5 "
     >
       <section className="space-y-20">
         <div>

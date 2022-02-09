@@ -6,7 +6,7 @@ function Challenge() {
   return (
     <div
       id="challenge"
-      className="h-screen w-4/5 grid grid-cols-2 mx-auto items-center space-x-5"
+      className="w-4/5 grid grid-cols-2 mx-auto items-center space-x-5"
     >
       <ChallengeLeftSection />
       <div className="relative h-min items-center">

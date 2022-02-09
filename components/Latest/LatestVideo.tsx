@@ -13,24 +13,21 @@ function LatestVideo() {
       />
       
 
-      <div className="grid grid-cols-3">
+      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-x-5">
         <iframe
           className="rounded-lg"
-          width={400}
-          height={300}
+          
           src="https://www.youtube.com/embed/tHlxXVXwn7g"
         ></iframe>
         <iframe
           src="https://www.youtube.com/embed/ADNgEHFDYzo"
           className="rounded-md"
-          width={400}
-          height={300}
+          
         ></iframe>
         <iframe
           src="https://www.youtube.com/embed/AivyFZXT2ek"
           className="rounded-md"
-          width={400}
-          height={300}
+          
         ></iframe>
       </div>
     </div>

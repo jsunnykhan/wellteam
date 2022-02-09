@@ -3,7 +3,7 @@ import React from "react";
 
 function ListItem({ title }: { title: string }) {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 max-w-lg">
       <Image
         src="/arrowwhite.svg"
         width={30}

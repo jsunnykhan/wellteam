@@ -37,24 +37,27 @@ function ChallengeGuide() {
       <div className="h-2/3 relative">
         <Image src="/bg2.jpg" layout="fill" alt="Leafs" objectFit="cover" />
         <div className="absolute bg-black w-full h-full opacity-60"></div>
-        <h3 className="absolute left-32 bottom-10 w-1/2 mx-auto ">
-          {"Take on a challenge & optimise your life."}
-        </h3>
 
-        <div className="bg-primaryLight w-3/6 h-2/3 absolute right-0 -bottom-52 px-6 py-14">
-          <div className="w-4/5 space-y-4">
-            {guideList.right.map((data) => (
-              <ListItem key={data.id} title={data.title} />
-            ))}
+        <div className="absolute -bottom-48">
+          <div className="flex justify-end">
+            <div className="pl-32 space-y-16">
+              <h3 className="max-w-xl">
+                {`Take on a challenge & optimise your life.`}
+              </h3>
+              <div className="space-y-4">
+                {guideList.left.map((data) => (
+                  <ListItem key={data.id} title={data.title} />
+                ))}
+              </div>
+            </div>
+            <div className="bg-primaryLight px-6 py-14">
+              <div className="space-y-4">
+                {guideList.right.map((data) => (
+                  <ListItem key={data.id} title={data.title} />
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div className="flex w-4/5 mx-auto mt-14 space-y-3">
-        <div className="w-5/12 space-y-4">
-          {guideList.left.map((data) => (
-            <ListItem key={data.id} title={data.title} />
-          ))}
         </div>
       </div>
     </div>
