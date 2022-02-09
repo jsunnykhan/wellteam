@@ -15,5 +15,12 @@
   h4 {
     @apply font-serif text-2xl;
   }
- 
 }
+
+/* @layer components {
+  .w-viewport {
+    width: calc(100vw * 3);
+    overflow: hidden;
+    
+  }
+} */

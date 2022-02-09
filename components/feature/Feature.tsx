@@ -22,14 +22,12 @@ const radioButtonData = [
     title: "For a better life",
     type: ButtonType.LIFE,
   },
-  
 ];
 
 function Feature() {
   const [activeButton, setActiveButton] = useState<ButtonType>(
     ButtonType.ONLINE
   );
-
   const onRadioButtonHandler = (btnType: ButtonType) => {
     if (btnType === ButtonType.ONLINE) {
       setActiveButton((active) => (active = ButtonType.ONLINE));
@@ -40,7 +38,10 @@ function Feature() {
     }
   };
   return (
-    <div className="bg-primaryLight py-14 md:py-24" id="program">
+    <div
+      className="bg-primaryLight py-14 md:py-24 overflow-hidden"
+      id="program"
+    >
       <div className="text-center space-y-5">
         <h2>Ready to get Started?</h2>
         <p>
@@ -61,10 +62,23 @@ function Feature() {
       </div>
 
       {/* Start Here */}
-      <div className="gap-5 lg:flex overflow-hidden">
-        {radioButtonData.map((data, index) => (
-          <RadioButtonContext key={data.title} data={data} index={index + 1} />
-        ))}
+
+      <div className="pl-[10%]">
+        <div
+          className="flex transition-all duration-200 ease-in-out"
+          style={{
+            width: "210vw",
+            transform: `translateX(${-70 * activeButton}vw)`,
+          }}
+        >
+          {radioButtonData.map((data, index) => (
+            <RadioButtonContext
+              key={data.title}
+              data={data}
+              index={index + 1}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
