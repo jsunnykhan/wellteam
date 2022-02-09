@@ -5,7 +5,7 @@ import ChallengeLeftSection from "./ChallengeLeft";
 function Challenge() {
   return (
     <div id="challenge" className="pl-[10%] relative">
-      <div className="w-[45%] lg:w-[40%] left-0 top-0">
+      <div className="w-[45%] lg:w-[35%] left-0 top-0">
         <ChallengeLeftSection />
       </div>
 
@@ -14,10 +14,10 @@ function Challenge() {
           src="/4.jpg"
           alt="travel world"
           width={500}
-          height={350}
+          height={300}
           layout="responsive"
         />
-        <div className="absolute w-full h-full top-0 right-0 bottom-0 left-0 bg-black opacity-30"></div>
+        <div className="absolute w-full h-full top-0 right-0 bottom-0 left-0 bg-black opacity-40"></div>
       </div>
     </div>
   );
