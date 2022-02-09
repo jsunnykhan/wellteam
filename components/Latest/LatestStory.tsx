@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Post from "../post/Post";
+import ProfileCard from "../profile/ProfileCard";
 import Headline from "./../common/Headline";
 
 const LatestStoryData = [
@@ -35,29 +36,59 @@ function LatestStory() {
         btn2={{ title: "Join us", bg_color: "bg-secondary" }}
       />
 
-      <div className="w-full h-96 grid grid-cols-2 grid-rows-2 gap-2">
-        <div className="row-span-2 bg-white">
-          <Post
-            title={LatestStoryData[0].title}
-            subTitle={LatestStoryData[0].subTitle}
-            image_url={LatestStoryData[0].image_url}
-          />
+      <div className="grid grid-cols-2 grid-rows-2 gap-2">
+        <div className="row-span-2">
+          <div className="space-y-5">
+            <Image
+              className="rounded-2xl"
+              src={LatestStoryData[0].image_url}
+              alt="Nice picture"
+              width={500}
+              height={650}
+            />
+            <div className="space-y-5">
+              <h4>{LatestStoryData[0].title}</h4>
+              <p>{LatestStoryData[0].subTitle}</p>
+            </div>
+
+            <ProfileCard />
+          </div>
         </div>
 
-        <div className="row-span-1 bg-slate-400">
-          {/* <Post
-            title={LatestStoryData[1].title}
-            subTitle={LatestStoryData[1].subTitle}
-            image_url={LatestStoryData[1].image_url}
-          /> */}
+        <div className="row-span-1 ">
+          <div className="space-y-5">
+            <Image
+              className="rounded-2xl"
+              src={LatestStoryData[1].image_url}
+              alt="Nice picture"
+              width={500}
+              height={250}
+            />
+            <div className="space-y-5">
+              <h4>{LatestStoryData[1].title}</h4>
+              <p>{LatestStoryData[1].subTitle}</p>
+            </div>
+
+            <ProfileCard />
+          </div>
         </div>
 
-        <div className="row-span-1 bg-red-400">
-          {/* <Post
-            title={LatestStoryData[2].title}
-            subTitle={LatestStoryData[2].subTitle}
-            image_url={LatestStoryData[2].image_url}
-          /> */}
+        <div className="row-span-1 ">
+          <div className="space-y-5">
+            <Image
+              className="rounded-2xl"
+              src={LatestStoryData[2].image_url}
+              alt="Nice picture"
+              width={500}
+              height={250}
+            />
+            <div className="space-y-5">
+              <h4>{LatestStoryData[2].title}</h4>
+              <p>{LatestStoryData[2].subTitle}</p>
+            </div>
+
+            <ProfileCard />
+          </div>
         </div>
       </div>
     </div>
