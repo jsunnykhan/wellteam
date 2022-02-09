@@ -4,14 +4,14 @@ import ChallengeLeftSection from "./ChallengeLeft";
 
 function Challenge() {
   return (
-    <div
-      id="challenge"
-      className="w-4/5 grid grid-cols-2 mx-auto items-center space-x-5"
-    >
-      <ChallengeLeftSection />
-      <div className="relative h-min items-center">
+    <div id="challenge" className="pl-[10%] relative">
+      <div className="w-[50%] left-0 top-0">
+        <ChallengeLeftSection />
+      </div>
+
+      <div className="absolute right-0 top-20">
         <Image
-          src="/challenge.jpg"
+          src="/4.jpg"
           alt="travel world"
           width={500}
           height={420}
