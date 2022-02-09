@@ -40,7 +40,7 @@ function Feature() {
     }
   };
   return (
-    <div className="bg-primaryLight py-14 md:py-24 ">
+    <div className="bg-primaryLight py-14 md:py-24" id="program">
       <div className="text-center space-y-5">
         <h2>Ready to get Started?</h2>
         <p>

@@ -8,7 +8,7 @@ import Headline from "../common/Headline";
 
 function Programs() {
   return (
-    <div className="py-20 space-y-20 w-4/5 mx-auto">
+    <div className="py-20 space-y-20 w-4/5 mx-auto" id="membership">
       
       <Headline
         title={`Join now, where you are, with what you've got.`}

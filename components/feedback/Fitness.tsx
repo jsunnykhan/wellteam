@@ -143,7 +143,7 @@ const fitnessData = [
 
 function Fitness() {
   return (
-    <div className="w-4/5 mx-auto items-center space-y-10">
+    <div className="w-4/5 mx-auto items-center space-y-16">
       <div className="lg:flex justify-between items-center space-y-1 0 lg:space-y-0 h-max">
         <div className="max-w-xl space-y-6">
           <h2>{"Let's be friends, Share your Feels with"}</h2>

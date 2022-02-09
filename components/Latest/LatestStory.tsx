@@ -26,9 +26,9 @@ const LatestStoryData = [
 ];
 
 function LatestStory() {
-  console.log(LatestStoryData[0]);
+
   return (
-    <div className="w-4/5 mx-auto items-center space-y-10">
+    <div className="w-4/5 mx-auto items-center space-y-10" id="article">
       <Headline
         title={`Our Latest Stories`}
         subTitle="What's new? Our blog and news."
