@@ -11,7 +11,7 @@ import Feature from "./../components/feature/Feature";
 
 const Home: NextPage = () => {
   return (
-    <div className="space-y-20">
+    <div className="space-y-24">
       <HomePage />
       <Challenge />
       <Programs />
@@ -21,6 +21,7 @@ const Home: NextPage = () => {
       <Feature />
       <LatestStory />
       <Feedback />
+      <div className="h-16"></div>
     </div>
   );
 };
