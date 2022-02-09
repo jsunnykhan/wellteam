@@ -5,7 +5,7 @@ import ChallengeLeftSection from "./ChallengeLeft";
 function Challenge() {
   return (
     <div id="challenge" className="pl-[10%] relative">
-      <div className="w-[45%] left-0 top-0">
+      <div className="w-[45%] lg:w-[40%] left-0 top-0">
         <ChallengeLeftSection />
       </div>
 
